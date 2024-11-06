@@ -1,0 +1,150 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.navbar-logo {
+  font-weight: 600;
+  color: rgb(122, 122, 122);
+}
+
+.navbar-logo b {
+  color: #ff511c;
+}
+
+.navbar-link {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-link li {
+  margin-right: 30px;
+}
+
+.navbar-link li a {
+  text-decoration: none;
+  color: rgb(122, 122, 122);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.navbar-link li a:hover {
+  color: #ff511c;
+}
+
+.navbar-link .active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ff511c;
+  display: flex;
+  position: relative;
+  margin-top: 3x;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.sign {
+  background: transparent;
+  border: none;
+  color: rgb(122, 122, 122);
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.sign:hover {
+  background-color: #ff511c;
+  border-radius: 10px;
+  color: black;
+}
+
+.hamburguer {
+  /*display: none;*/
+  cursor: pointer;
+}
+
+.hamburguer .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0 50px;
+  }
+
+  .content-right {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .category .list-items .card-list {
+    gap: 100px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+
+  .content {
+    margin-top: 50px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .content .content-left h2 {
+    font-size: 30px;
+  }
+
+  .content .content-left p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .content-right {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    order: -1;
+  }
+
+  .category .list-items {
+    width: 100%;
+  }
+
+  .category .list-items .card-list {
+    gap: 10px;
+  }
+
+  .category .list-items h3 {
+    font-size: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 160px;
+    margin: 0 auto;
+  }
+}

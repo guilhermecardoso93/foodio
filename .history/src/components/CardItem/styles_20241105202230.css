@@ -1,0 +1,57 @@
+.card {
+  width: 200px;
+  min-height: 250px;
+  /* Define uma altura mínima para o cartão */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #ffffff;
+  outline: 2px solid #ffaa96;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 15px rgba(250, 173, 150, 0.4);
+  /* Ajusta a sombra */
+  margin-bottom: 15px;
+  /* Espaço entre a imagem e o conteúdo abaixo */
+}
+
+.card .title {
+  padding: 10px 0 10px;
+}
+
+.card .title h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.desc-food p {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.card-content {
+  text-align: center;
+  /* Centraliza o conteúdo */
+  padding: 5px;
+}
